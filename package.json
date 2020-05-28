@@ -1,0 +1,36 @@
+{
+  "name": "error_module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devergroup-io/Error-Module.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devergroup-io/Error-Module/issues"
+  },
+  "homepage": "https://github.com/devergroup-io/Error-Module#readme",
+  "devDependencies": {
+    "@types/jest": "^25.2.3",
+    "@types/node": "^14.0.5",
+    "cross-env": "^7.0.2",
+    "jest": "^26.0.1",
+    "ts-jest": "^26.0.0",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "error-stack-parser": "^2.0.6",
+    "moment": "^2.26.0",
+    "sentry-transport-winston": "^1.0.2",
+    "winston": "^3.2.1",
+    "winston-transport-sentry-node": "^0.3.0"
+  }
+}
