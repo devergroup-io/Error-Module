@@ -3,8 +3,14 @@ import errorParser from "error-stack-parser";
 import moment from "moment";
 import winston from "winston";
 import Sentry from "winston-transport-sentry-node";
-
-const colorizer = winston.format.colorize();
+const colorizer = winston.format.colorize({
+  colors: {
+    info: "white",
+    warn: "yellow",
+    error: "red",
+    debug: "blue",
+  },
+});
 
 const consoleLogFormat = winston.format.combine(
   winston.format.timestamp(),
@@ -33,12 +39,13 @@ const productionFormat = winston.format.combine(
         .format("DD/MM/YYYY hh:mm:ss")} - ${msg.level}: ${msg.message}`
   )
 );
-enum TransportType {
+export enum TransportType {
   FILE = "FILE",
   CONSOLE = "CONSOLE",
   SENTRY = "SENTRY",
 }
-type GetTransportContext = {
+
+export type GetTransportContext = {
   sentryOpts: {
     sentry: {
       dsn: string;

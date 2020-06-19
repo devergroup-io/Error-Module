@@ -18,5 +18,6 @@ registerErrorHandling({
 });
 
 (() => {
-  throw new Error("it should exit in 10 seconds");
+  logger.info("hello");
+  // throw new Error("it should exit in 10 seconds");
 })();
