@@ -1292,6 +1292,17 @@ detect-newline@^3.0.0:
   resolved "https://registry.yarnpkg.com/detect-newline/-/detect-newline-3.1.0.tgz#576f5dfc63ae1a192ff192d8ad3af6308991b651"
   integrity sha512-TLz+x/vEXm/Y7P7wn1EJFNLxYpUD4TgMosxY6fAVJUnJMbupHBOncxyWUG9OpTaH9EBD7uFI5LfEgmMOc54DsA==
 
+devergroup-error@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/devergroup-error/-/devergroup-error-1.2.0.tgz#d3d9b2250be8887cab78512d528732fdc529686a"
+  integrity sha512-QowvMj3icRXMilG7e8aPfO4q0DlVFXN1mn96yrRbNt7NQ8J9L9NQerd+EGtPi1n5muHc04Dt3VS9UXmt+4KOkg==
+  dependencies:
+    error-stack-parser "^2.0.6"
+    moment "^2.26.0"
+    sentry-transport-winston "^1.0.2"
+    winston "^3.2.1"
+    winston-transport-sentry-node "^0.3.0"
+
 diagnostics@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/diagnostics/-/diagnostics-1.1.1.tgz#cab6ac33df70c9d9a727490ae43ac995a769b22a"
