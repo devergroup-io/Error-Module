@@ -46,7 +46,7 @@ export enum TransportType {
 }
 
 export type GetTransportContext = {
-  sentryOpts: {
+  sentryOpts?: {
     sentry: {
       dsn: string;
     };
@@ -76,10 +76,12 @@ const getTransports = (
             format: consoleLogFormat,
           })
         );
+        break;
       }
       case TransportType.SENTRY: {
         const sentry = new Sentry(context.sentryOpts);
         transports.push(sentry);
+        break;
       }
     }
   });
