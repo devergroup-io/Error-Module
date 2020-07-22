@@ -1,7 +1,7 @@
 {
   "name": "devergroup-error",
-  "version": "1.4",
-  "description": "",
+  "version": "1.4.5",
+  "description": "Module for log and error handling",
   "main": "dist/index.js",
   "scripts": {
     "test": "jest",
